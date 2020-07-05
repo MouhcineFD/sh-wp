@@ -1,9 +1,10 @@
-package org.aut.dao;
+package com.sh.pfe.repository;
 
-import org.aut.entities.Product;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
+import com.sh.pfe.models.Category;
+
 @RepositoryRestResource
-public interface ProductRepository extends MongoRepository<Product,String> {
+public interface CategoryRepository extends MongoRepository<Category,String> {
 }
